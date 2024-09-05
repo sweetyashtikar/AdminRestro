@@ -1,0 +1,35 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input {
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+      width: 100%;
+  }
+
+  input, button {
+      width: 100%;
+      font-size: 1em;
+  }
+}

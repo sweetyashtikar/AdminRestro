@@ -1,0 +1,112 @@
+/* RestaurantList.css */
+.restaurant-list-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-list-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.restaurant-list-container .add-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.restaurant-list-container .add-link a {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.restaurant-list-container .add-link a:hover {
+    background-color: #45a049;
+}
+
+.restaurant-list {
+    list-style: none;
+    padding: 0;
+}
+
+.restaurant-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-list li span {
+    font-size: 1.2rem;
+}
+
+.restaurant-list li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.restaurant-list li .actions a, 
+.restaurant-list li .actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.restaurant-list li .actions a {
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+}
+
+.restaurant-list li .actions a:hover {
+    background-color: #1976d2;
+}
+
+.restaurant-list li .actions button {
+    background-color: #f44336;
+    color: white;
+}
+
+.restaurant-list li .actions button:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+    .restaurant-list-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .restaurant-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .restaurant-list li .actions {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .restaurant-list li .actions a, 
+    .restaurant-list li .actions button {
+        width: 48%;
+    }
+}
